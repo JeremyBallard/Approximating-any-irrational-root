@@ -17,7 +17,8 @@ public class Root {
 	}
 	private static double approxRoot(double x, double y, int count, double approx, int rootFactor){
 		//breaks out of the recusive algorithm, especially since the changes are miniscule at this count
-		if (count == 300){
+		//attempting to limit count flexibly
+		if (count == 2*rootFactor){
 			System.out.println("Count @ " + count);
 			System.out.println("x = " + x);
 			System.out.println("y = " + y);
@@ -36,6 +37,10 @@ public class Root {
 			case 50:
 			case 100:
 			case 250:
+			case 500:
+			case 1000:
+			case 2500:
+			case 5000:
 				System.out.println("Count @ " + count);
 				System.out.println("x = " + x);
 				System.out.println("y = " + y);

@@ -13,7 +13,7 @@ public class Root {
 			System.out.println("Has to be an irrational root for this to work");
 			return Math.sqrt(rootFactor);
 		}
-		return approxRoot2(x, y, 0, 0.0, rootFactor);
+		return approxRoot(x, y, 0, 0.0, rootFactor);
 	}
 	private static double approxRoot(double x, double y, int count, double approx, int rootFactor){
 		//breaks out of the recusive algorithm, especially since the changes are miniscule at this count
